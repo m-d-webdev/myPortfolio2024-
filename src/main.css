@@ -1,0 +1,83 @@
+.main_layout_style {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+    max-width: 1500px;
+    min-height: 800px;
+
+}
+
+
+
+
+
+
+
+/* ----------------- */
+
+.navButton:hover svg,
+.navButton:hover p {
+    color: var(---);
+    fill: var(---);
+}
+
+.navButton svg,
+.navButton p {
+    transition: .2s;
+    /* opacity: .8; */
+}
+
+
+
+
+/* _______________ ABOUT ME STYLE   _______________________ */
+
+.WELCOMING_TEXT_STYLE {
+    font-size: 35px;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+.MyImageStyle{
+    width:400px;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
+    object-position: top;
+}
+
+/* _______________ HEADER  STYLE  _______________________ */
+
+.cntTexttareaMessage svg {
+    fill: var(--bg-primary);
+    width: 20px;
+    margin-left: 20px;
+    height: 20px;
+}
+
+.cntTexttareaMessage button {
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+    width: 120px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.cntTexttareaMessage textarea {
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+    margin-left: 20px;
+    resize: none;
+    border: none;
+    min-height: 200px;
+}
