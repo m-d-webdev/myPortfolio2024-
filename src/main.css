@@ -46,8 +46,75 @@
     margin-bottom: 20px;
 
 }
-.MyImageStyle{
-    width:400px;
+
+.cntMyImg .IconeSkilStyle1 {
+    top: 0;
+    left: 0;
+    animation: ReactLogoAnimation 5s infinite;
+}
+
+@keyframes ReactLogoAnimation {
+    0% {
+
+        transform: rotate(0) ;
+        
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+
+        transform: rotate(0);
+        
+    }
+}
+
+.cntMyImg .IconeSkilStyle2 {
+    animation: LaravelLogoAnimation 5s infinite;
+    bottom: 0;
+    width: 80px !important;
+    height:auto !important;
+    left: 0;
+}
+@keyframes LaravelLogoAnimation {
+    0% {
+
+        /* transform: rotate(0) ; */
+        
+    }
+    50% {
+        /* transform: rotate(360deg); */
+    }
+    100% {
+
+        /* transform: rotate(0); */
+        
+    }
+}
+.cntMyImg .IconeSkilStyle3 {
+    top: 0;
+    right: 0;
+}
+
+.cntMyImg .IconeSkilStyle4 {
+    bottom: 0;
+    right: 0;
+}
+
+.cntMyImg .IconeSkilStyle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.cntMyImg {
+    /* width:50%; */
+    /* height: 600px; */
+    padding: 30px;
+}
+
+.MyImageStyle {
+    width: 400px;
     height: 400px;
     object-fit: cover;
     margin: auto;
