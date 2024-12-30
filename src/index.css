@@ -143,15 +143,14 @@ body {
   background-color: rgb(20, 230, 20);
 }
 
-
 strong {
   color: var(--bg-secondary);
   font-size: 14px;
 }
 
 svg {
-  width: 25px;
-  height: 25px;
+  width: 21px;
+  height: 21px;
   fill: var(--bg-secondary);
   /* stroke: var(--bg-primary); */
 }
@@ -251,6 +250,14 @@ button:active {
   background-color: var(--bg-secondary);
 }
 
+.fw600{
+  font-weight: 600;
+}
+
+.fw900{
+  font-weight: 900;
+}
+
 .dng svg {
   fill: #fff;
   margin-left: 10px;
@@ -278,7 +285,10 @@ button {
   font-size: 14px;
   font-weight: 600;
 }
-
+i{
+  border-bottom: solid 1px var(--border-color);
+  font-weight: 900;
+}
 .btnHoverBorder {
   transition: .15s;
   border: solid 1px transparent;
@@ -1749,6 +1759,24 @@ select {
 
 .activeCmp {
   animation: animateComp .2s ease;
+}
+
+.pop {
+  animation: popAimate .3s ease;
+}
+
+@keyframes popAimate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(.8);
+  }
 }
 
 @keyframes animateComp {

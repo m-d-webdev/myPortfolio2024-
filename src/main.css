@@ -139,7 +139,12 @@
 }
 
 /* _______________ HEADER  STYLE  _______________________ */
-
+.cntTexttareaMessage{
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
 .cntTexttareaMessage svg {
     fill: var(--bg-primary);
     width: 20px;
@@ -158,8 +163,9 @@
 .cntTexttareaMessage textarea {
     padding: 15px;
     border-radius: 10px;
-    width: 500px;
+    width: 100%;
     margin-left: 20px;
+    font-weight: 600;
     resize: none;
     border: none;
     min-height: 200px;
@@ -453,4 +459,25 @@
   
 
   
-  
+  /* ----------------------------------------- */
+  .BtnCopyText p{
+    display: none;
+    white-space: nowrap;
+    animation-duration:.1s;
+    opacity: 0;
+}
+  .BtnCopyText:hover p{
+        position: relative;
+        display: flex;
+        opacity: 1;
+  }
+  .BtnCopyText:hover{
+      background-color: var(--bg-third);
+
+  }
+  .BtnCopyText{
+    position: relative;
+    padding: 5px 10px;
+    width: 150px;
+    cursor: pointer;
+  }
