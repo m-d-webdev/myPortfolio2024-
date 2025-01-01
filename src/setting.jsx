@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
+import img_zoomerReducer from './pages/img_zoomer'
 export const ThemeSlice = createSlice({
     name: "Theme",
     initialState: {
@@ -40,7 +40,8 @@ export const { checkMode, Change_theme } = ThemeSlice.actions
 
 export const store = configureStore({
     reducer: {
-        Theme: ThemeSlice.reducer
+        Theme: ThemeSlice.reducer,
+        img_zoomerReducer
     }
 })
 

@@ -1,15 +1,18 @@
+.main_layout_style::-webkit-scrollbar{
+    display: none;
+}
 .main_layout_style {
-
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     margin: auto;
-    margin-top: 20px;
     /* background-color: var(--bg-primary); */
     border-radius: 10px;
     max-width: 1500px;
     min-height: 800px;
+    max-height: 1200px;
+    overflow: auto;
 
 }
 
@@ -27,15 +30,20 @@
     fill: var(---);
 }
 
+/* . */
 .navButton svg,
 .navButton p {
     transition: .2s;
+    color: #fff;
+    fill: #fff;
     /* opacity: .8; */
 }
-
+.navButton.active{
+    background-color: var(---);
+}
 .LogoIcone {
-    stroke: #fff !important;
-
+    margin-right: 10px;
+    filter: drop-shadow(0 0 10px #fff);
 }
 
 .DarkModeIcone {
@@ -61,6 +69,18 @@
 }
 
 /* _______________ ABOUT ME STYLE   _______________________ */
+.portfolioSection.active{
+    opacity: 1;
+    /* transform: scale(1); */
+}
+.portfolioSection{
+    opacity: 0.2;
+    transition: .4s;
+    /* transform: scale(.5); */
+}
+
+
+/* -------- */
 
 .WELCOMING_TEXT_STYLE {
     font-size: 35px;
