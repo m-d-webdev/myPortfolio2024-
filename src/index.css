@@ -13,15 +13,7 @@
 }
 
 body {
-  /* background-color: var(--bg-third);
-   */
-   background-size: cover;
-   width: 100%;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-image: url('media/planet-outer-space-cosmos-night-lights-orbit-4096x3112-8766.jpg');
-   /* background-image: url('media/planet-orbit-outer-space-cosmos-distant-planet-4096x3112-8763.jpg'); */
-
+ background-color: var(--bg-third);
 }
 
 :root {
@@ -1859,5 +1851,15 @@ select {
     border: 3px solid var(--bg-secondary);
     animation: spinner-bulqg1 0.96s infinite linear alternate,
       spinner-oaa3wk 1.92s infinite linear;
+  }
+  .LabelinpSelect {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    max-width: 520px;
+    margin-bottom: 10px;
+    margin-left: 40px;
   }
 }

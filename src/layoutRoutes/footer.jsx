@@ -8,13 +8,14 @@ import animationDat from "./Animation - 1731398071278.json"
 function Footer() {
 
     const [messageToMesinle, setSinglemessageToMe] = useState('')
-    console.log(messageToMesinle);
-    
+    const isWorkingOnPc = window.innerWidth > 800
+
+
     const [GetWriterFunction_VSBL, setGetWriterFunction_VSBL] = useState(false)
     const GetWriterFunction = useMemo(() =>
         () => {
-            console.log(messageToMesinle);
-            
+
+
             const [MessageToMe, setMessageToMe] = useState({
                 message: messageToMesinle,
                 writerName: "",
@@ -183,18 +184,19 @@ function Footer() {
     return (
         <footer ref={footerRef} className='wmia portfolioSection mt50 c-s-s bg-l br20 p20'>
 
-            <div className="wmia mt20 mb20 p20 r-c-c">
+            <div className={`wmia mt20 mb20 p20 ${isWorkingOnPc ? "r-p-c" : "c-c-c"} `}>
                 <h1
+                    className={`${isWorkingOnPc ? "" : "mb20"} `}
                     style={{
-                        fontSize: "22px"
+                        fontSize: "22px", textAlign: "center"
                     }}
                 >
                     Collaborate with a developer who understands your business goals !
                 </h1>
-                <img src="media/rb_2147627097.png" className='ml50 h200' alt="" />
+                <img src="media/rb_2147627097.png" className={`${isWorkingOnPc ? "ml50 h200" : " h200"} `} alt="" />
             </div>
-            <div className="wmia p20 r-p-c mt50 wmia">
-                <div className="wmia-c-s-s">
+            <div className={`wmia   ${isWorkingOnPc ? "r-p-c p10" : "c-c-c"}  mt50 `}>
+                <div className="wmia c-s-s">
 
                     {localStorage.getItem("message-for-me") == null ?
                         <>
@@ -206,11 +208,11 @@ function Footer() {
                                     setSinglemessageToMe(e.target.value)
                                 }} name="" id="" placeholder='Go ahead ... '>
                                 </textarea>
-                                <button 
+                                <button
                                     disabled={messageToMesinle.length < 10}
-                                onClick={() => {
-                                    setGetWriterFunction_VSBL(true)
-                                }} className='r-e-c'>
+                                    onClick={() => {
+                                        setGetWriterFunction_VSBL(true)
+                                    }} className='r-e-c'>
                                     Send
                                     <svg version="1.1" viewBox="0 0 2048 2048" width="128" height="128" xmlns="http://www.w3.org/2000/svg">
                                         <path transform="translate(186,140)" d="m0 0h22l22 3 29 7 27 9 37 15 118 49 19 8 39 16 130 54 19 8 37 15 40 17 34 14 29 12 48 20 39 16 45 19 27 11 111 46 43 18 34 14 36 15 39 16 26 11 29 12 24 10 39 16 45 19 27 11 123 51 125 52 82 34 31 13 44 18 46 19 24 10 33 14 27 13 20 12 15 10 13 11 19 19 9 12 11 18 8 15 8 20 5 15v3l2 1 1 8 2 2v94l-2 1v-5l-7-1-3 11-8 19-8 13-7 11-12 16-12 14-12 12-21 13-16 9-24 12-33 14-36 15-29 12-32 13-33 14-31 13-37 15-31 13-41 17-75 31-43 18-70 29-39 16-156 65-34 14-19 8-135 56-94 39-29 12-38 16-44 18-31 13-34 14-19 8-94 39-118 49-82 34-96 40-41 17-30 12-31 11-19 5-25 4-25 2-26-2-18-4-17-5-18-8-17-9-17-12-10-9-8-7-12-12-9-11-10-14-8-14-8-16-7-17-5-15h-1l-1-8v-73l3-8 8-29 15-57 22-86 13-51 19-74 9-35 17-66 14-58 8-30 18-71 4-16 3-5 2-1 705-1 25-2 12-4 10-6 10-9 7-11 4-10 2-10v-14l-3-11-5-12-6-9-4-5-10-7-10-4-18-2-121-1-595-1-5-2-4-9-14-54-14-55-11-43-15-58-13-52-19-74-16-64-16-62-14-56-14-53-2-1-1-5v-81l2 2 2-4 7-21 9-20 6-12 9-14 11-14 9-10 7-8 10-9 15-11 19-12 19-9 26-8 16-3zm-184 237 1 2z" />
@@ -224,14 +226,14 @@ function Footer() {
                         </> :
                         <>
                             <h1 className="mrauto " style={{
-                                color: "var(---)", fontSize: "20px"
+                                color: "var(---)", fontSize: "20px",textAlign:'center'
                             }}
                             >Thank you for your message! It’s been received and will be reviewed</h1>
                         </>
 
                     }
                 </div>
-                <div className="c-c-c" style={{ width: "40%" }}>
+                <div className="c-c-c " style={isWorkingOnPc ? { width: "40%"  } : {width:"100%" ,marginTop:"20px"}}>
                     <img style={{ maxWidth: "100%", maxHeight: "400px" }} src="media/rb_17635.png" alt="" />
                     <p className='fw600'>Feedback</p>
                 </div>

@@ -18,6 +18,14 @@ export default function Layout() {
                     <Img_zoomer />
                 }
                 <Footer />
+                <video className='NackgVider' src="media/215598.mp4" muted autoPlay loop></video>
+                {
+                    window.innerWidth > 800 &&
+                    <div className="wmia mt50" style={{ minHeight: "1300px" }}>
+                        <h1 style={{ color: "#fff" }}>enjoy the view  </h1>
+                    </div>
+                }
+
             </main>
         </div>
     )
