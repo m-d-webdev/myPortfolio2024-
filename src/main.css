@@ -187,6 +187,11 @@
     fill: #FFCA28;
 }
 
+.st20{fill:#EA4335;}
+.st21{fill:#4285F4;}
+.st22{fill:#34A853;}
+.st23{fill:#FBBC05;}
+
 .cntALlSkillls .SkillElemHome svg {
     width: 40px;
     height: 40px;
@@ -480,4 +485,8 @@
     padding: 5px 10px;
     width: 150px;
     cursor: pointer;
+  }
+
+  .cntTechniquesProjects svg{
+    margin-right:20px;
   }
