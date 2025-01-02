@@ -25,7 +25,7 @@ export default imgZoomerSlice.reducer
 
 export const Img_zoomer = () => {
     const { img_url } = useSelector(e => e.img_zoomerReducer)
-    const isWorkingOnPc = window.innerWidth > 8000
+    const isWorkingOnPc = window.innerWidth > 800
     const dispatch = useDispatch()
     const cntIgm_ref = useRef()
     const imgREf = useRef()
@@ -52,7 +52,7 @@ export const Img_zoomer = () => {
     return ReactDOM.createPortal(
         <div className="backendMer" onClick={handelClickOutImgZommer}>
             <div ref={cntIgm_ref} style={(!isWorkingOnPc && isWisthGtHeight) ?
-                {
+                { 
                     width: window.innerHeight-100,
                     transform: "rotate(90deg)" 
                 }

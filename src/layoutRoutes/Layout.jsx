@@ -7,7 +7,7 @@ import { Img_zoomer } from '../pages/img_zoomer';
 import Footer from './footer'
 import { Change_bg_img, Change_bg_normal, Change_bg_video } from '../setting';
 export default function Layout() {
-    const isUsingPc = window.innerWidth > 1200
+    const isUsingPc = window.innerWidth > 800
     const { is_visible } = useSelector(e => e.img_zoomerReducer)
     const { isImageChoosed, isVeiodPlayed, isNormalStlyeChoosed } = useSelector(e => e.AppModeReducer)
 
