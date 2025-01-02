@@ -1356,7 +1356,7 @@ function home({ page_open }) {
                 const observer = new IntersectionObserver(
                     ([entry]) => {
                         if (entry.isIntersecting) {
-                            document.title ="Footer"
+                            document.title ="Contact me"
                             entry.target.classList.add('active')
                         } else {
                             entry.target.classList.remove('active')
