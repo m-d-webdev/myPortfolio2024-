@@ -17,18 +17,25 @@
     align-items: start;
     justify-content: start;
     margin: auto;
-    /* background-color: var(--bg-primary); */
     border-radius: 10px;
-    max-width: 1500px;
+    max-width: 1450px;
     min-height: 800px;
-    max-height: 1200px;
+    max-height:1200px;
     overflow: auto;
 
 }
 
 
 
-
+.MenuGetTHem:hover{
+    opacity: 1;
+}
+.MenuGetTHem{
+    position: fixed;
+    transition: .2s;
+    bottom: 10px;
+    opacity: .2;
+}
 
 
 
@@ -41,13 +48,7 @@
 }
 
 /* . */
-.navButton svg,
-.navButton p {
-    transition: .2s;
-    color: #fff;
-    fill: #fff;
-    /* opacity: .8; */
-}
+
 
 .navButton.active {
     background-color: var(---);
@@ -610,7 +611,7 @@
         align-items: start;
         justify-content: start;
         margin: auto;
-        /* background-color: var(--bg-primary); */
+        background-color: var(--bg-third);
         border-radius: 10px;
         max-width: none;
         min-height: 800px;

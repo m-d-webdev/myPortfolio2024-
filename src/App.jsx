@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Router, RouterProvider } from 'react-router-dom'
 import routes from './layoutRoutes/routes';
-import { checkMode } from './setting';
+import { check_bg, checkMode } from './setting';
 import { useDispatch ,useSelector} from 'react-redux';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
   const Primary_actions = useMemo(() => {
     return () => {
       dispatch(checkMode())
+      dispatch(check_bg())
     }
   }, [])
 
