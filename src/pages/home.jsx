@@ -43,6 +43,7 @@ function home({ page_open }) {
                     ([entry]) => {
                         if (entry.isIntersecting) {
                             entry.target.classList.add('active')
+                            document.title ="Home"
                         } else {
                             entry.target.classList.remove('active')
                         }
@@ -210,6 +211,7 @@ function home({ page_open }) {
                 const observer = new IntersectionObserver(
                     ([entry]) => {
                         if (entry.isIntersecting) {
+                            document.title ="Skills"
                             entry.target.classList.add('active')
                         } else {
                             entry.target.classList.remove('active')
@@ -1013,6 +1015,7 @@ function home({ page_open }) {
                 const observer = new IntersectionObserver(
                     ([entry]) => {
                         if (entry.isIntersecting) {
+                            document.title ="Works"
                             entry.target.classList.add('active')
                         } else {
                             entry.target.classList.remove('active')
@@ -1287,6 +1290,7 @@ function home({ page_open }) {
                     ([entry]) => {
                         if (entry.isIntersecting) {
                             entry.target.classList.add('active')
+                            document.title ="About me"
                         } else {
                             entry.target.classList.remove('active')
                         }
@@ -1352,6 +1356,7 @@ function home({ page_open }) {
                 const observer = new IntersectionObserver(
                     ([entry]) => {
                         if (entry.isIntersecting) {
+                            document.title ="Footer"
                             entry.target.classList.add('active')
                         } else {
                             entry.target.classList.remove('active')
