@@ -1,15 +1,11 @@
-@font-face {
-  font-family: 'Poppins';
-  /* src: url('media/Quicksand-VariableFont_wght.ttf') format('truetype'); */
-  font-style: normal;
-}
 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Quicksand", serif;
+
 }
 
 body {
