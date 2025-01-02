@@ -43,8 +43,8 @@
 
 .navButton:hover svg,
 .navButton:hover p {
-    color: var(---);
-    fill: var(---);
+    color: var(---) !important;
+    fill: var(---) !important;
 }
 
 /* . */
@@ -804,11 +804,15 @@
     .navButton svg,
     .navButton p {
         transition: .2s;
-        color: var(--bg-secondary);
-        fill: var(--bg-secondary);
+        color: var(--bg-secondary) !important;
+        fill: var(--bg-secondary) !important;
         /* opacity: .8; */
     }
-
+    .navButton.active svg,
+    .navButton.active p {
+        color:#fff !important;
+        fill: #fff !important;
+    }
 
 
 }
