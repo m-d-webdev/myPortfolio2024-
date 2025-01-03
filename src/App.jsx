@@ -2,11 +2,15 @@ import { useEffect, useMemo, useState } from 'react'
 import { Router, RouterProvider } from 'react-router-dom'
 import routes from './layoutRoutes/routes';
 import { check_bg, checkMode } from './setting';
-import { useDispatch ,useSelector} from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
   const dispatch = useDispatch();
-  const { is_visible} = useSelector(e => e.img_zoomerReducer)
+  const { is_visible } = useSelector(e => e.img_zoomerReducer)
+
+  window.onload = () => {
+    window.location.href = '/'
+  }
 
   const Primary_actions = useMemo(() => {
     return () => {
@@ -21,7 +25,7 @@ function App() {
   return (
     <>
       <RouterProvider router={routes} />
-      </>
+    </>
   )
 }
 
