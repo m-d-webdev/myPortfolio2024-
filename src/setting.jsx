@@ -75,7 +75,7 @@ export const AppModeSlice = createSlice({
             localStorage.setItem("bg", "none");
         }
 
-    }
+    },
 })
 
 export const { check_bg,
