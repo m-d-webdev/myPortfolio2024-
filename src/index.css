@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", serif;
+  /* font-weight: ; */
 
 }
 
@@ -380,6 +381,7 @@ h6 {
 
 p {
   font-size: 14px;
+  font-weight: 600;
   color: var(--bg-secondary);
 }
 

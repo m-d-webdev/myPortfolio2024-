@@ -20,17 +20,18 @@
     border-radius: 10px;
     max-width: 1450px;
     min-height: 800px;
-    max-height:1200px;
+    max-height: 1200px;
     overflow: auto;
 
 }
 
 
 
-.MenuGetTHem:hover{
+.MenuGetTHem:hover {
     opacity: 1;
 }
-.MenuGetTHem{
+
+.MenuGetTHem {
     position: fixed;
     transition: .2s;
     bottom: 10px;
@@ -53,14 +54,16 @@
 .navButton.active {
     background-color: var(---);
 }
+
 .navButton.active:hover svg,
 .navButton.active:hover p {
-    color:#fff;
+    color: #fff;
     fill: #fff;
 }
+
 .navButton.active svg,
 .navButton.active p {
-    color:#fff;
+    color: #fff;
     fill: #fff;
 }
 
@@ -107,10 +110,18 @@
 /* -------- */
 
 .WELCOMING_TEXT_STYLE {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.WELCOMING_TEXT_STYLE>* {
     font-size: 35px;
+    margin: 0 !important;
+
     font-family: "Kanit", serif;
     font-weight: 600;
-    margin-bottom: 20px;
 
 }
 
@@ -174,8 +185,8 @@
 }
 
 .MyImageStyle {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     margin: auto;
     border-radius: 50%;
@@ -566,28 +577,30 @@
         background-color: var(--bg-primary);
         right: 0px;
         filter: drop-shadow(-5px -5px 10px rgba(0, 0, 0, 0.258));
-        top:10px;
+        top: 10px;
         width: 200px;
-        border-radius: 10px 0 10px 10px ;
+        border-radius: 10px 0 10px 10px;
         padding: 10px;
         height: 330px;
-        animation: animteMenu .15s ;
+        /* animation: animteMenu .15s; */
     }
-    
+
     @keyframes animteMenu {
-        0%{
+        0% {
             transform: scale(.6);
             /* width: 0; */
             opacity: 0;
             /* height: 0; */
         }
     }
-    .navButton{
+
+    .navButton {
         width: 100%;
         margin-bottom: 10px;
         justify-content: start;
         border-radius: 20px;
     }
+
     .NackgVider {
         display: none;
     }
@@ -623,8 +636,8 @@
         height: 300px;
     }
 
-    .WELCOMING_TEXT_STYLE {
-        font-size: 25px !important;
+    .WELCOMING_TEXT_STYLE>* {
+        font-size: 24px !important;
         text-align: center;
         font-family: "Kanit", serif;
         font-weight: 600;
@@ -807,9 +820,10 @@
         fill: var(--bg-secondary) !important;
         /* opacity: .8; */
     }
+
     .navButton.active svg,
     .navButton.active p {
-        color:#fff !important;
+        color: #fff !important;
         fill: #fff !important;
     }
 
