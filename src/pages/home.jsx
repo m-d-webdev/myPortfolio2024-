@@ -871,6 +871,7 @@ function home({ page_open }) {
 
                         </>
                     ],
+                    appLink:"https://chatemate.vercel.app",
                     GithubLink: "https://github.com/m-d-webdev/ChateMate.git",
                 },
                 {
