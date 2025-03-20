@@ -913,6 +913,8 @@ function home({ page_open }) {
 
                         </>
                     ],
+                    appLink:"https://mstph-quick-cart.netlify.app/",
+
                     GithubLink: "https://github.com/m-d-webdev/QuickCart",
                 },
                 {
