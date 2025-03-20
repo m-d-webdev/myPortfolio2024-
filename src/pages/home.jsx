@@ -777,8 +777,9 @@ function home({ page_open }) {
                 {
                     name: "Younite social app",
                     desc: "Younite is a social platform where users can explore, comment on, and share various types of media, including articles, blogs, short clips (reels), and moments (stories). Additionally, I have integrated a messaging system that allows users to send messages to their friends within the platform, along with other enhanced features to improve user interaction and engagement.",
-                    deskTopImg: "youniteImg.png",
-                    phoneImg: null,
+                    deskTopImg: "YounitePc.png",
+                    // phoneImg: "quiCartImg1.jpg",
+                    phoneImg: "younitePhone2.jpg",
                     KeytsPoints: [
                         "Social platform for sharing and interacting with media",
                         "Users can view, comment on, and share articles, blogs, reels, and stories",
@@ -798,7 +799,7 @@ function home({ page_open }) {
 
                         </>
                     ],
-                    appLink:"https://younite-sigma.vercel.app",
+                    appLink: "https://younite-sigma.vercel.app",
 
                     GithubLink: "https://github.com/m-d-webdev/Younite.git",
                 },
@@ -873,7 +874,7 @@ function home({ page_open }) {
 
                         </>
                     ],
-                    appLink:"https://chatemate.vercel.app",
+                    appLink: "https://chatemate.vercel.app",
                     GithubLink: "https://github.com/m-d-webdev/ChateMate.git",
                 },
                 {
@@ -913,7 +914,7 @@ function home({ page_open }) {
 
                         </>
                     ],
-                    appLink:"https://mstph-quick-cart.netlify.app/",
+                    appLink: "https://mstph-quick-cart.netlify.app/",
 
                     GithubLink: "https://github.com/m-d-webdev/QuickCart",
                 },
@@ -947,6 +948,7 @@ function home({ page_open }) {
                             <svg fill="none" height="2500" width="2183" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53"><path d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z" fill="#1b73ba" /><path d="M62.468 129.275V12.085l51.064.17-9.106 104.85z" fill="#1c88c7" /><path d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z" fill="#fff" /></svg>
                         </>
                     ],
+                    appLink: "https://moroccan-paths.netlify.app/",
                     GithubLink: "https://github.com/m-d-webdev/Mroccan-Paths--H",
                 },
                 {
@@ -1264,7 +1266,8 @@ function home({ page_open }) {
 
                 Home_projects_partRef.current?.scrollIntoView({
                     behavior: "smooth", block: "start"
-                })
+                });
+
             }
 
 
