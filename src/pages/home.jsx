@@ -798,6 +798,8 @@ function home({ page_open }) {
 
                         </>
                     ],
+                    appLink:"https://younite-sigma.vercel.app",
+
                     GithubLink: "https://github.com/m-d-webdev/Younite.git",
                 },
                 {
